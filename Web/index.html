@@ -1,30 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Quiu</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js">
+
+    </script>
 
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img  class="logo text-flicker-in-glow" src="imagenes/LogoLargoSinFondo.png" alt="Logo Hotel Quiu">
-        </a>
-
-        <nav>
-            <ul class="botones text-focus-in">
-                <li class="scale-up-center"><a href="index.html">Inicio</a></li>
-                <li class="scale-up-center"><a href="pages/Hotel.html">Hotel</a></li>
-                <li class="scale-up-center"><a href="pages/Habitaciones-y-precios.html">Habitaciones y precios</a></li>
-                <li class="scale-up-center"><a href="pages/Reserva.html">Reserva</a></li>
-                <li class="scale-up-center"><a href="pages/Contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand heartbeat" href="#">
+                    <img src="imagenes/LogoLargoSinFondo.png" alt="Logo Hotel Quiu">
+                </a>
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbar" 
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item scale-up-center">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item scale-up-center">
+                            <a class="nav-link" href="pages/Hotel.html">Hotel</a>
+                        </li>
+                        <li class="nav-item scale-up-center">
+                            <a class="nav-link" href="pages/Habitaciones-y-precios.html">Habitaciones y Precios</a>
+                        </li>
+                        <li class="nav-item scale-up-center">
+                            <a class="nav-link" href="pages/Reserva.html">Reserva</a>
+                        </li>
+                        <li class="nav-item scale-up-center">
+                            <a class="nav-link" href="pages/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -36,13 +61,13 @@
 
             <br>
 
-            <div class="principal">
+            <div class="principal lead">
                 <p> ★ ★ ★ </p>
             </div>
 
             <br>
 
-            <div class="principal text-focus-in">
+            <div class="principal lead">
                 <p>El fantastico Hotel Quiu está situado en un lugar privilegiado de Cordoba, mas especificamente en el barrio General Paz.</p> 
                 <p>Los servicios están todos incluidos en el precio al igual que nuestro exquisito desayuno, servido junto a la piscina.</p>
                 <p>En Quiu, tiene estacionamiento gratuito y vigilancia las 24 horas y todo el sistema de seguridad necesario para que se sientan seguros durante su estadía.</p>
@@ -53,7 +78,6 @@
             <br>
             <br>
 
-            
             <div>
                 <img class="logocama" src="./imagenes/PNGIconoCama1.png" alt="logo cama">
             </div>
@@ -65,9 +89,9 @@
 
 
             <div class="principal">
-                <h2>Servicios Generales</h2>
+                <h1 class="display-5">Servicios Generales</h1>
                 <!-- este es flex -->
-                <div class="items">
+                <div class="items lead">
                     <div>
                         <ul>
                             <li>Asador</li>
@@ -87,7 +111,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
 
@@ -98,7 +121,7 @@
     <br>
 
     <footer>
-        <div>
+        <div class="lead">
             <p>Quiu Cordoba</p>
             <p>Avenida Cosito 1234</p>
             <p>Tel: +54 351 123 - 4560</p>

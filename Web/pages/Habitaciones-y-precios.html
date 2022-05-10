@@ -1,28 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habitaciones y precios</title>
+    <script src="../js/bootstrap.bundle.min.js">
+
+    </script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
-        <a href="../index.html">
-            <img class="logo text-flicker-in-glow" src="../imagenes/LogoLargoSinFondo.png" alt="Logo Hotel Quiu" width="200" height="200">
-        </a>
-        <nav>
-            <ul class="botones text-focus-in">
-                <li class="scale-up-center"><a href="../index.html">Inicio</a></li>
-                <li class="scale-up-center"><a href="Hotel.html">Hotel</a></li>
-                <li class="scale-up-center"><a href="Habitaciones-y-precios.html">Habitaciones y precios</a></li>
-                <li class="scale-up-center"><a href="Reserva.html">Reserva</a></li>
-                <li class="scale-up-center"><a href="Contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand heartbeat" href="#">
+                    <img src="../imagenes/LogoLargoSinFondo.png" alt="Logo Hotel Quiu">
+                </a>
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbar" 
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item scale-up-center">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item scale-up-center">
+                            <a class="nav-link" href="./Hotel.html">Hotel</a>
+                        </li>
+                        <li class="nav-item scale-up-center">
+                            <a class="nav-link" href="./Habitaciones-y-precios.html">Habitaciones y Precios</a>
+                        </li>
+                        <li class="nav-item scale-up-center">
+                            <a class="nav-link" href="./Reserva.html">Reserva</a>
+                        </li>
+                        <li class="nav-item scale-up-center">
+                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
