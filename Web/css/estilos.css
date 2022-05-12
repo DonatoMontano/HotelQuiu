@@ -11,8 +11,8 @@ body {
 
 a {
   color: black;
-  font-weight: 600;
-  letter-spacing: 3px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -54,16 +54,6 @@ nav {
   width: 80%;
   display: block;
   margin: 0 auto;
-}
-
-footer {
-  display: grid;
-  grid-template-columns: 1000px 80px;
-  grid-template-rows: 40px 40px 40px;
-  grid-template-areas: 
-      "ele1 ele1"
-      "ele1 ele1"
-      "ele1 ele2";
 }
 
 .grid__hijo1 {
@@ -126,11 +116,142 @@ footer {
 
 
 
+.get-in-touch {
+max-width: 800px;
+margin: 50px auto;
+position: relative;
 
+}
+.get-in-touch .title {
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 3px;
+font-size: 3.2em;
+line-height: 48px;
+padding-bottom: 48px;
+   color: black;
+  background: black;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
 
+.contact-form .form-field {
+position: relative;
+margin: 32px 0;
+}
+.contact-form .input-text {
+display: block;
+width: 100%;
+height: 36px;
+border-width: 0 0 2px 0;
+border-color: #000;
+font-size: 18px;
+line-height: 26px;
+font-weight: 400;
+}
+.contact-form .input-text:focus {
+outline: none;
+}
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+-webkit-transform: translateY(-24px);
+        transform: translateY(-24px);
+}
+.contact-form .label {
+position: absolute;
+left: 20px;
+bottom: 11px;
+font-size: 18px;
+line-height: 26px;
+font-weight: 400;
+color: #000;
+cursor: text;
+transition: -webkit-transform .2s ease-in-out;
+transition: transform .2s ease-in-out;
+transition: transform .2s ease-in-out, 
+-webkit-transform .2s ease-in-out;
+}
+.contact-form .submit-btn {
+display: inline-block;
+background-color: #000;
+ background-image: linear-gradient(125deg,#a72879,#064497);
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 16px;
+padding: 8px 16px;
+border: none;
+width:200px;
+cursor: pointer;
+}
 
+/*------------------ footer ------------------*/
+.footer-basic {
+padding-top:60px 0;
+background-color:#ffffff;
+color:#ffffff;
+}
 
+footer {
+background-color: rgb(0, 0, 0);
+}
 
+.footer-basic ul {
+padding:0;
+list-style:none;
+text-align:center;
+font-size:18px;
+line-height:1.6;
+margin-bottom:0;
+}
+
+.footer-basic li {
+padding:0 10px;
+}
+
+.footer-basic ul a {
+color:inherit;
+text-decoration:none;
+opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+opacity:1;
+}
+
+.footer-basic .social {
+text-align:center;
+padding-bottom:25px;
+padding-top: 25px;
+}
+
+.footer-basic .social > a {
+font-size:24px;
+width:40px;
+height:40px;
+line-height:40px;
+display:inline-block;
+text-align:center;
+border-radius:50%;
+border:1px solid #ccc;
+margin:0 8px;
+color:inherit;
+opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+opacity:0.9;
+}
+
+.footer-basic .copyright {
+margin-top:15px;
+text-align:center;
+font-size:13px;
+color:#aaa;
+margin-bottom:0;
+}
+
+/*------------------fin footer ------------------*/
 
 @media screen and (max-width: 1024px) {
   body {
