@@ -29,13 +29,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="" href="#">
-            <img
-              class="nav-logo"
-              src="../imagenes/LogoLargoSinFondo.png"
-              alt="Logo Hotel Quiu"
-            />
-          </a>
+          <a class="fs-2" href="../index.html"> Hotel Quiu </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -70,15 +64,149 @@
     </header>
     <br />
     <main>
-      <section>
-        <div>
-          <img
-            class="habitacion"
-            src="../imagenes/platinum1.jpg"
-            alt="Imagenes de las habitaciones"
+      <section class="gallery">
+        <div class="gallery__item">
+          <input
+            type="radio"
+            id="img-1"
+            checked
+            name="gallery"
+            class="gallery__selector"
           />
+          <img
+            class="gallery__img"
+            src="../imagenes/interiorlobby.jpg"
+            alt=""
+          />
+          <label for="img-1" class="gallery__thumb"
+            ><img src="../imagenes/interiorlobby.jpg" alt=""
+          /></label>
+        </div>
+        <div class="gallery__item">
+          <input
+            type="radio"
+            id="img-2"
+            name="gallery"
+            class="gallery__selector"
+          />
+          <img class="gallery__img" src="../imagenes/piscina.jpg" alt="" />
+          <label for="img-2" class="gallery__thumb"
+            ><img src="../imagenes/piscina.jpg" alt=""
+          /></label>
+        </div>
+        <div class="gallery__item">
+          <input
+            type="radio"
+            id="img-3"
+            name="gallery"
+            class="gallery__selector"
+          />
+          <img class="gallery__img" src="../imagenes/gym.jpg" alt="" />
+          <label for="img-3" class="gallery__thumb"
+            ><img src="../imagenes/gym.jpg" alt=""
+          /></label>
+        </div>
+        <div class="gallery__item">
+          <input
+            type="radio"
+            id="img-4"
+            name="gallery"
+            class="gallery__selector"
+          />
+          <img
+            class="gallery__img imagengaleria"
+            src="../imagenes/restobar.jpg"
+            alt=""
+          />
+          <label for="img-4" class="gallery__thumb"
+            ><img src="../imagenes/restobar.jpg" alt=""
+          /></label>
+        </div>
+        <div class="gallery__item">
+          <input
+            type="radio"
+            id="img-5"
+            name="gallery"
+            class="gallery__selector"
+          />
+          <img
+            class="gallery__img imagengaleria"
+            src="../imagenes/comidaresto2.jpg"
+            alt=""
+          />
+          <label for="img-5" class="gallery__thumb"
+            ><img src="../imagenes/comidaresto2.jpg" alt=""
+          /></label>
+        </div>
+        <div class="gallery__item">
+          <input
+            type="radio"
+            id="img-6"
+            name="gallery"
+            class="gallery__selector"
+          />
+          <img
+            class="gallery__img imagengaleria"
+            src="../imagenes/comidaresto.jpg"
+            alt=""
+          />
+          <label for="img-6" class="gallery__thumb"
+            ><img src="../imagenes/comidaresto.jpg" alt=""
+          /></label>
         </div>
       </section>
+      <br />
+      <br />
+      <div>
+        <div class="principal texto-blanco">
+          <h1 class="display-5">Servicios Generales</h1>
+          <!-- este es flex -->
+          <div class="items lead">
+            <div>
+              <ul>
+                <li>Asador</li>
+                <li>SUM con asadores</li>
+                <li>Vigilancia las 24hs</li>
+                <li>Cochera</li>
+                <li>Habitaciones de 30,45 y 60 m2</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>Desayuno junto a la piscina</li>
+                <li>Wifi</li>
+                <li>Piscina</li>
+                <li>Caja de seguridad</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="principal texto-blanco">
+        <h2>POLITICAS</h2>
+        <p>
+          HORAS DE ENTRADA/SALIDA Hora de entrada: 15:00 Hora de salida: 12:00
+        </p>
+        <p>
+          LLEGADAS ANTES DE LA HORA DE CHECK-IN AND PARTIDAS DESPUÉS DE LA HORA
+          DE CHECK-OUT Si prevé llegar al hotel antes de la hora establecida de
+          entrada y desea disponer inmediatamente de su habitación, le
+          recomendamos reservar la noche anterior a su llegada para asegurarse
+          de contar con acceso sin demoras. Asimismo, para salidas después de la
+          hora de check out, la reserva de una noche adicional le garantiza la
+          disponibilidad de su habitación hasta su salida. Si elige no reservar,
+          con mucho gusto le guardaremos su equipaje y tendrá a su disposición
+          el uso de nuestras instalaciones del gimnasio para refrescarse.
+        </p>
+        <p>
+          TARJETAS DE CRÉDITO American Express, Visa, MasterCard, Lemon, JCB,
+          China Union Pay
+        </p>
+      </div>
     </main>
 
     <div class="footer-basic">

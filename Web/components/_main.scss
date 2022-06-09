@@ -16,6 +16,7 @@ body {
     margin: 0 auto;
 }
 
+
 .botones {
     display: flex;
     flex-direction: row;
@@ -67,6 +68,71 @@ body {
 	        animation: heartbeat 4s ease-in-out both;
 }
 /* fin Efectos */
+
+// galeria
+* {
+  box-sizing: border-box;
+}
+
+$max-img-width: 1100px;
+$max-img-height: 850px;
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.gallery {
+  display: flex;
+    margin: 10px auto;
+    max-width: $max-img-width;
+    position: relative;
+    padding-top: 40%;
+
+    @media screen and (max-width: 1280px) {
+      padding-top: 50%
+  }
+    
+    @media screen and (max-width: 1024px) {
+      padding-top: 60%
+  }
+  
+  @media screen and (max-width: 600px) {
+      padding-top: 60%
+  }
+  
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+   &__thumb {
+    max-width: 200px;
+    max-height: 100px;
+    padding-top: 6px;
+    margin: 6px;
+    display: block;
+  }
+  
+  &__selector {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    
+    &:checked {
+      + .gallery__img {
+        opacity: 1;
+      }
+      ~ .gallery__thumb > img {
+        box-shadow: 0 0 0 3px #0be2f6;;
+      }
+    }
+  }
+}
+// fin galeria
 
 /* Seccion de Contactanos */
 .get-in-touch {
@@ -228,6 +294,7 @@ figure.snip1157 .author h5 span {
 }
 
 .caja-comentario {
+  overflow: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,18 +303,22 @@ figure.snip1157 .author h5 span {
 }
 /* FIN COMENTARIOS */
 
+.caja-comentario::-webkit-scrollbar {
+  display: none;
+}
+
 
 
 
 @media screen and (max-width: 1024px) {
     body {
-        background-color: bisque;
+        background-color: rgb(12, 12, 12);
     }
 }
 
 @media screen and (max-width: 600px) {
     body {
-        background-color: thistle;
+        background-color: rgb(12, 12, 12);
     }
 }
 
@@ -318,8 +389,10 @@ figure.snip1157 .author h5 span {
   position: relative; right: 0;
   width: 60%;
   padding: 10px;
+  box-shadow: 1px 1px 1px rgb(255, 255, 255);
   &__texto {
     color: #000;
+    margin: 0 300px;
   }
   &__imagen {
     display: inline-block;
@@ -337,6 +410,7 @@ figure.snip1157 .author h5 span {
   padding: 10px;
   &__texto {
     color:rgb(255, 255, 255) ;
+    margin: 0 30px;
   }
   &__imagen {
     display: inline-block;
@@ -356,4 +430,6 @@ figure.snip1157 .author h5 span {
 p {
   padding: 1rem;
 }
+
+
 /* fin keyframe animaciones */
